@@ -20,7 +20,14 @@ public class HomeController {
 		return "about";
 	}
 
+	@GetMapping(path = {"/service"})
+	public String service() {
+		
+		return "service";
+	}
 }
+	
+
 
 
 
