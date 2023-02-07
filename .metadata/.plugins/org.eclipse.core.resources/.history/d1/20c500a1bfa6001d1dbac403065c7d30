@@ -1,0 +1,15 @@
+package com.carwow.mapper;
+
+import org.apache.ibatis.annotations.Insert;
+import org.apache.ibatis.annotations.Mapper;
+
+import com.carwow.dto.LoginDto;
+
+@Mapper
+public interface LoginMapper {
+
+	@Insert ("INSERT INTO user( userId, passwd) " +
+				"VALUES (#{ userId }, #{ passwd })")
+	void registerUser(LoginDto user);
+
+}

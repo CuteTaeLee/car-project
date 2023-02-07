@@ -1,0 +1,12 @@
+package com.carwow.mapper;
+
+import org.apache.ibatis.annotations.Mapper;
+
+import com.carwow.dto.LoginDto;
+
+@Mapper
+public interface LoginMapper {
+
+	void registerUser(LoginDto user);
+
+}

@@ -1,0 +1,5 @@
+package com.carwow.mapper;
+
+public interface LoginMapper {
+
+}

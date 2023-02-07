@@ -1,0 +1,5 @@
+package org.zercok.mapper;
+
+public interface TimeMapper {
+
+}

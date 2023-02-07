@@ -1,0 +1,11 @@
+package com.carwow.service;
+
+import com.carwow.dto.LoginDto;
+
+public interface LoginService {
+
+	void registerUser(LoginDto user);
+	
+	LoginDto findLoginByIdAndPasswd(String user_Id, String passwd);
+	
+}
